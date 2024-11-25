@@ -19,7 +19,8 @@ Aplikasi ini bisa menjadi referensi pembelajaran dalam beberapa hal penting dala
 
 ## ListView
 <code>
-ListView(
+        
+        ListView(
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -41,7 +42,7 @@ ListView(
             ),
           ),
           ),
-          
+                      
           GridView.count(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
