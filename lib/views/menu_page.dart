@@ -6,6 +6,7 @@ class MenuPage extends StatelessWidget{
   final String title;
   final IconData icons;
   final List<String> imgs;
+  final String description;
   
   //mendefinisikan bahwa permintaan/parameter harus dimasukkan ketika ingin menggunakan Widget/halaman ini
   const MenuPage({
@@ -13,6 +14,7 @@ class MenuPage extends StatelessWidget{
    required this.title,
    required this.icons,
    required this.imgs,
+   required this.description
   });
 
   @override
@@ -69,6 +71,11 @@ class MenuPage extends StatelessWidget{
             }
           ),
           ),
+
+          //mengatur jarak antara gambar dengan tombol kembali
+          const SizedBox(height: 20),
+
+          Text(description),
 
           //mengatur jarak antara gambar dengan tombol kembali
           const SizedBox(height: 20),
